@@ -53,9 +53,22 @@ class ViewController: UIViewController {
         let num1, num2, num3: UInt32
         let keyword: String
         
-        num1 = UInt32(num1Text.text!)!
-        num2 = UInt32(num2Text.text!)!
-        num3 = UInt32(num3Text.text!)!
+        let text1 = num1Text.text
+        let text2 = num2Text.text
+        let text3 = num3Text.text
+
+        
+        if text1 == "" || text2 == "" || text3 == "" {
+            
+            let alertController = UIAlertController(title: "Error", message: "Must write all 3 numbers", preferredStyle: .alert)
+            let OKAction = UIAlertAction(title: "OK", style: .default)
+            alertController.addAction(OKAction)
+            self.present(alertController, animated: true)
+            return
+        }
+        num1 = UInt32(text1!)!
+        num2 = UInt32(text2!)!
+        num3 = UInt32(text3!)!
         keyword = keywordText.text!
         
         let res = powFast(x: num1 * num2, a: num2 * num3, n: num3 * num1)
@@ -75,7 +88,7 @@ class ViewController: UIViewController {
         resultText.text = "\(key)\(res)";
     }
     
-    func doneClicked() {
+    @objc func doneClicked() {
         view.endEditing(true)
     }
     

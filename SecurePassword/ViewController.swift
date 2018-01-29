@@ -22,9 +22,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var generateButtom: UIButton!
     
-    func powFast(x: UInt32, a: UInt32, n: UInt32) -> UInt32 {
-        var result: UInt32 = 1
-        var xFunc, aFunc: UInt32
+    func powFast(x: UInt64, a: UInt64, n: UInt64) -> UInt64 {
+        var result: UInt64 = 1
+        var xFunc, aFunc: UInt64
         xFunc = x
         aFunc = a
         
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         
         view.endEditing(true)
         
-        let num1, num2, num3: UInt32
+        let num1, num2, num3: UInt64
         let keyword: String
         
         let text1 = num1Text.text
@@ -66,23 +66,23 @@ class ViewController: UIViewController {
             self.present(alertController, animated: true)
             return
         }
-        num1 = UInt32(text1!)!
-        num2 = UInt32(text2!)!
-        num3 = UInt32(text3!)!
+        num1 = UInt64(text1!)!
+        num2 = UInt64(text2!)!
+        num3 = UInt64(text3!)!
         keyword = keywordText.text!
         
         let res = powFast(x: num1 * num2, a: num2 * num3, n: num3 * num1)
         
         var key: String = ""
         for scalar in keyword.unicodeScalars {
-            var k:UInt32 = (UInt32(scalar) + res) % 27
-            if UInt32(scalar) > 100 {
+            var k:UInt64 = (UInt64(scalar) + res) % 27
+            if UInt64(scalar) > 100 {
                 k += 97
             } else {
                 k += 65
             }
             
-            key.unicodeScalars.append(UnicodeScalar(k)!)
+            key.unicodeScalars.append(UnicodeScalar(UInt32(k))!)
         }
         
         resultText.text = "\(key)\(res)";

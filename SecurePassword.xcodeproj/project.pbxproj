@@ -8,23 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		EA5FEA90201C5E7C008F0FDD /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = EA5FEA8F201C5E7C008F0FDD /* AppIcon.appiconset */; };
+		EA5FEA95201EDF72008F0FDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5FEA91201EDF71008F0FDD /* LaunchScreen.storyboard */; };
+		EA5FEA96201EDF72008F0FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5FEA93201EDF72008F0FDD /* Main.storyboard */; };
 		EAF193A61FCEFBB700DFB71A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF193A51FCEFBB700DFB71A /* AppDelegate.swift */; };
 		EAF193A81FCEFBB700DFB71A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF193A71FCEFBB700DFB71A /* ViewController.swift */; };
-		EAF193AB1FCEFBB700DFB71A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF193A91FCEFBB700DFB71A /* Main.storyboard */; };
 		EAF193AE1FCEFBB700DFB71A /* SecurePassword.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAF193AC1FCEFBB700DFB71A /* SecurePassword.xcdatamodeld */; };
 		EAF193B01FCEFBB800DFB71A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAF193AF1FCEFBB800DFB71A /* Assets.xcassets */; };
-		EAF193B31FCEFBB800DFB71A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF193B11FCEFBB800DFB71A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA5FEA8F201C5E7C008F0FDD /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppIcon.appiconset; path = Assets.xcassets/AppIcon.appiconset; sourceTree = "<group>"; };
+		EA5FEA92201EDF71008F0FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA5FEA94201EDF72008F0FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAF193A21FCEFBB700DFB71A /* SecurePassword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecurePassword.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF193A51FCEFBB700DFB71A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAF193A71FCEFBB700DFB71A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EAF193AA1FCEFBB700DFB71A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAF193AD1FCEFBB700DFB71A /* SecurePassword.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SecurePassword.xcdatamodel; sourceTree = "<group>"; };
 		EAF193AF1FCEFBB800DFB71A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EAF193B21FCEFBB800DFB71A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAF193B41FCEFBB800DFB71A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,11 +58,11 @@
 		EAF193A41FCEFBB700DFB71A /* SecurePassword */ = {
 			isa = PBXGroup;
 			children = (
+				EA5FEA91201EDF71008F0FDD /* LaunchScreen.storyboard */,
+				EA5FEA93201EDF72008F0FDD /* Main.storyboard */,
 				EAF193A51FCEFBB700DFB71A /* AppDelegate.swift */,
 				EAF193A71FCEFBB700DFB71A /* ViewController.swift */,
-				EAF193A91FCEFBB700DFB71A /* Main.storyboard */,
 				EAF193AF1FCEFBB800DFB71A /* Assets.xcassets */,
-				EAF193B11FCEFBB800DFB71A /* LaunchScreen.storyboard */,
 				EAF193B41FCEFBB800DFB71A /* Info.plist */,
 				EAF193AC1FCEFBB700DFB71A /* SecurePassword.xcdatamodeld */,
 				EA5FEA8F201C5E7C008F0FDD /* AppIcon.appiconset */,
@@ -130,10 +130,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA5FEA95201EDF72008F0FDD /* LaunchScreen.storyboard in Resources */,
 				EA5FEA90201C5E7C008F0FDD /* AppIcon.appiconset in Resources */,
-				EAF193B31FCEFBB800DFB71A /* LaunchScreen.storyboard in Resources */,
 				EAF193B01FCEFBB800DFB71A /* Assets.xcassets in Resources */,
-				EAF193AB1FCEFBB700DFB71A /* Main.storyboard in Resources */,
+				EA5FEA96201EDF72008F0FDD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,20 +153,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EAF193A91FCEFBB700DFB71A /* Main.storyboard */ = {
+		EA5FEA91201EDF71008F0FDD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EAF193AA1FCEFBB700DFB71A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EAF193B11FCEFBB800DFB71A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EAF193B21FCEFBB800DFB71A /* Base */,
+				EA5FEA92201EDF71008F0FDD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EA5FEA93201EDF72008F0FDD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA5FEA94201EDF72008F0FDD /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -28,14 +28,25 @@ class ViewController: UIViewController {
         xFunc = x
         aFunc = a
         
+        let max = UInt64(sqrt(Double(UInt64.max)))
+        
         while (aFunc > 0) {
-            if (aFunc & 1 == 1) {
-                result = (result * aFunc) % n
-                aFunc -= 1
-            } else {
-                xFunc = (xFunc * xFunc) % n
-                aFunc >>= 1
+            
+            if (aFunc > max || xFunc > max) {
+                let alertController = UIAlertController(title: "Error", message: "Too large numbers", preferredStyle: .alert)
+                let OKAction = UIAlertAction(title: "OK", style: .default)
+                alertController.addAction(OKAction)
+                self.present(alertController, animated: true)
+                return 0
             }
+            
+            if (aFunc & 1 == 1) {
+                    result = result * aFunc % n
+                    aFunc -= 1
+                } else {
+                    xFunc = xFunc * xFunc % n
+                    aFunc >>= 1
+                }
         }
         return result % n
     }
@@ -75,7 +86,7 @@ class ViewController: UIViewController {
         
         var key: String = ""
         for scalar in keyword.unicodeScalars {
-            var k:UInt64 = (UInt64(scalar) + res) % 27
+            var k:UInt64 = (UInt64(scalar) + res) % 26
             if UInt64(scalar) > 100 {
                 k += 97
             } else {
